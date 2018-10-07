@@ -7,22 +7,22 @@
   <title>Bounce (wide)</title>
   <style>
     @keyframes bouncing{
-      100% { background-position: -2500px 0; }
+      100% { background-position: -3300px 0; }
     }
     body{
       background: rgb(235,235,235);
     }
     main{
       display: block;
-      width: 500px; height: 500px;
+      width: 300px; height: 500px;
       overflow: hidden;
       margin: 0 auto;
     }
     .bounce{ 
-      background: url('bounce_wide.svg') no-repeat;
-      width: 2500px;
+      background: url('bounce_frames_wide.svg') no-repeat;
+      width: 3300px;
       height: 500px;
-      animation: bouncing 0.5s steps(5) alternate infinite;
+      animation: bouncing 0.5s steps(11) alternate infinite;
     }
   </style>
 </head>
