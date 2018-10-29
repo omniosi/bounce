@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:before, *:after{
+  box-sizing: inherit
+}
+body{
+  background: #90959B;
+}
+main{
+  display: block;
+  position: relative;
+  margin: 6em;
+}
+button{
+  background: #8b8b8b;
+  -moz-appearance: none;
+  border: none;
+  border-radius: 15px;
+  box-shadow:
+  inset 1px 1px 0 1px #A6AAAD,
+  inset -1px -1px 0 1px #717274,
+    0 0 0 2px #1D2124;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;left: 0;
+}
+.hide{
+  display: none;
+}
+/* animations */
+@keyframes draw-one{
+  100% { background-position: -10000px 0; }
+}
+@keyframes draw-two{
+  100% { background-position: -18500px 0; }
+}
+@keyframes draw-three{
+  100% { background-position: -18000px 0; }
+}
+@keyframes draw-four{
+  100% { background-position: -12000px 0; }
+}
+@keyframes draw-five{
+  100% { background-position: -21000px 0; }
+}
+@keyframes draw-six{
+  100% { background-position: -24500px 0; }
+}
+
+.one .number{
+  background: url('svg/button_one.svg') no-repeat;
+  width: 10500px;
+  height: 500px;
+  animation: draw-one 0.5s steps(20) forwards;
+}
+.two .number{
+  background: url('svg/button_two.svg') no-repeat;
+  width: 19000px;
+  height: 500px;
+  animation: draw-two 0.5s steps(37) forwards;
+}
+.three .number{
+  background: url('svg/button_three.svg') no-repeat;
+  width: 18500px;
+  height: 500px;
+  animation: draw-three 0.5s steps(36) forwards;
+}
+.four .number{
+  background: url('svg/button_four.svg') no-repeat;
+  width: 12500px;
+  height: 500px;
+  animation: draw-four 0.5s steps(24) forwards;
+}
+.five .number{
+  background: url('svg/button_five.svg') no-repeat;
+  width: 21500px;
+  height: 500px;
+  animation: draw-five 0.5s steps(42) forwards;
+}
+.six .number{
+  background: url('svg/button_six.svg') no-repeat;
+  width: 25000px;
+  height: 500px;
+  animation: draw-six 0.5s steps(49) forwards;
+}
